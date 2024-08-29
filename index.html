@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Simeen Sohel</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#volunteering">Volunteering</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Simeen Sohel</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#volunteering" onclick="toggleMenu()">Volunteering</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/prof1.jpg" alt="SimeenSohel profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm </p>
+            <h1 class="title"> Simeen Sohel</h1>
+            <p class="section__text__p2">Year 12 student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-1.pdf')"> Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'"> contact info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin/'">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to kow more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container"> 
+            <div class="section__pic-container">
+                <img 
+                src="./assets/prof2.jpg" 
+                alt="profile picture" 
+                class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/Volunteer.jpeg" 
+                        alt="volunteer icon" 
+                        class="icon"/>
+                        <h3>Volunteering</h3>
+                        <p>1+ years <br />Year 12 Student</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Till Year 10, St Anns' Girls High School, India <br />Year12, Kellyville High School, Australia </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I’m a Year 12 student passionate about engineering and IT, with early programming experiences through Scratch and Python, a notable project with the Anveshana competition, and active roles in school clubs and volunteering. My commitment to these fields is reflected in my leadership in environmental initiatives and dedication to community service, balancing academic excellence with hands-on experience and a desire to make a positive impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#volunteering'" />
+    </section>
+    <section id="volunteering">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Volunteering Experiences</h1>
+        <div class="Volunteering-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/proj1.jpg" alt="project 1" class="project-img">
+                        <div>
+                            <h2 class="Volunteering-sub-title project-title">Experience One</h2>
+                            <h3 class="Volunteering-sub-title-2">Park Run</h3>
+                            <div class="text-container">
+                                <p>
+                                    As a volunteer at the Park Run event, held every Saturday at 8:00 AM, I volunteered to help ensure the safety and enjoyment of all participants. Serving primarily as a tail walker, I was responsible for walking at the end of the run, assisting those who finished last, and providing encouragement and support to community members throughout the course. Following the event, I aided in the cleanup process by picking up cones, checking for any stragglers by collectively working with other volunteers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/proj2.jpg" alt="project 2" class="project-img">
+                        <div>
+                            <h2 class="Volunteering-sub-title project-title">Experience Two</h2>
+                            <h3 class="Volunteering-sub-title-2">School Environmetal club</h3>
+                            <div class="text-container">
+                                <p>
+                                    As an active member of the school's Environmental Club. My responsibilities include planning and delivering weekly announcements on promoting environmental awareness and protection at assemblies, organising environment-themed days, and creating educational posters for the student body. I also help propose and implement initiatives aimed at reducing paper usage and advocating for recycled materials. Additionally, I help manage the school compost and participate in gardening activities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Proj3.jpg" alt="project 3" class="project-img">
+                        <div>
+                            <h2 class="Volunteering-sub-title project-title">Experience Three</h2>
+                            <h3 class="Volunteering-sub-title-2">Middle Dural Toy Library</h3>
+                            <div class="text-container">
+                                <p>
+                                    As a volunteer at the Middle Dural Toy Library, I assisted children and their parents in selecting toys, ensuring the safety and engagement of young children. My responsibilities included organising and arranging both new and returned toys, scanning them, and updating their status on the library's website. Additionally, I managed the website to maintain accurate toy inventory records, implemented a numbering system to streamline borrowing, and easy access for members to locate and borrow toys.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:simeenkhan3947@gmail.com">simeenkhan3947@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#achievements">Achivements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Simeen Sohel. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
